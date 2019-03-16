@@ -1,0 +1,19 @@
+.nav-link{
+    font-weight: lighter;
+ 
+}
+
+.nav-link:hover{
+    font-weight:bolder;
+    background-color:#fcf597;
+    
+}
+.aboutus i{
+    padding: 55px 55px;
+}
+body{
+    background-color: #fcf597;
+}
+.inspiration{
+    text-align: center;
+}
