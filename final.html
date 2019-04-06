@@ -6,22 +6,23 @@
 
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     <!-- Google Fonts Link ---------------- -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    
     <!-- Font Awesome Link ---------------- -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- links -->
     <link rel="stylesheet" type="text/css" href="final.css">
+    
+ 
 </head>
-
-
 
 <body>
 
-    <!-- nav bar---------------------------------------------------------->
+<!-- nav bar---------------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="#">Green City</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +34,16 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Inspiration</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#aboutus">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Partners</a>
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Statistics</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Community</a>
@@ -47,58 +51,69 @@
             </ul>
         </div>
     </nav>
-    <!--end nav bar----------------------------------->
+<!--end nav bar----------------------------------->
+    
+<!-- begin Header section ------------ -->
+  <header class="d-flex align-items-center">
+    <div class="container">
+      <h1><b>Green City</b></h1>
+      <p1>Aiming for an eco-friendly community.</p1>
+      <hr>
+        <button class="btn btn-lg btn-primary">Get Involved</button>
+        <button class="btn btn-lg btn-success">View Details</button>
+    </div>
+<!-- end Header section -------------- -->
+    <div class="bird-container bird-container--one">
+  		<div class="bird bird--one"></div>
+  	</div>
+  	<div class="bird-container bird-container--two">
+  		<div class="bird bird--two"></div>
+  	</div>
+  	<div class="bird-container bird-container--three">
+  		<div class="bird bird--three"></div>
+  	</div>
+  	<div class="bird-container bird-container--four">
+  		<div class="bird bird--four"></div>
+  	</div>  </header>
+
+
     <!-- begin about us-------------------------------->
-    <section class="aboutus container">
-        <h2>About Us</h2>
+    <section class="aboutus container-fluid" id="aboutus">
+       <div class="row">
         <div class="col-md-6">
+          <h2>About Us</h2>
             <p>We are dedicated to creating greener cities by providing community building and education through educational workshops, art and sports. We believe that communities have the power to transform the environment around them.</p>
-        </div>
+          
         <h2>Inspiration</h2>
-        <div class="col-md-6">
-            <div>
+      
                 <p>Here at Green City Corps, we believe in helping the environment through eco-friendly methods, such as recycling, picking up litter, and growing new plants. Our two main inspirations are the following.</p>
-                <div class="row">
-      <div class=col-md-6>
+              
         <span><strong>City Parks Foundation</strong></span>
         <a href="https://cityparksfoundation.org/">Click to learn more</a>
-      </div>
-      <div class=col-md-6>
         <span><strong>Oceana</strong></span>
         <a href="https://oceana.org/what-we-do">Click to learn more</a>
       </div>
-    </div>
-            </div>
+      <div class="col-md-6">
+    <h2>Learn More</h2>
+    <div style="font-size: .5rem;">
+      <button class="btn"><i class="fas fa-leaf fa-7x"></i></button>
+       <button class="btn"><i class="fas fa-tree fa-7x"></i></button>
+       <button class="btn"><i class="fas fa-city fa-7x"></i></button>
+       <button class="btn"><i class="fas fa-smog fa-7x"></i></button>
+       <button class="btn"><i class="fas fa-sun fa-7x"></i></button>
+       <button class="btn"><i class="fab fa-envira fa-7x"></i></button>
+        </div>
         </div>
     </section>
+    
     <!-- INSPIRATION ----------------------------------------------------------- -->
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
 <!-- end About Us Section--------------------------------- -->
 <!-- begin services and statistics section ----------->
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>Boilerplate Snippet</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-
-    <!-- Font Awesome Link ----- -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-</head>
-
-<body>
-<section>
-        <div class="s container">
+<section class = "services container-fluid" id= "services">
+       
             <div class="row">
                 <!-- first panel ---- -->
                 <div class="col-md-6">
@@ -113,8 +128,9 @@
                 <!-- second panel ---- -->
                 <div class="col-md-6">
                     <h1>Statistics</h1>
+                    <img src="environmenttypes.png" height="170 px" width="300 px">
                     <p>
-                        -NY emits around 1% of the total amout of greenhouse gases on the Earth.
+                        -New York emits around 1% of the total amout of greenhouse gases on the Earth.
                     </p>
                     <p>
                         -The average New Yorker uses roughly one quarter of the electricity that the average citizen of the United States uses in a year. 
@@ -126,111 +142,84 @@
             </div>
         </div>
     </section>
-</body>
 
-</html>
 <!-- end services and statistics section ----------->
-  <!--begin team section------------------------------------ -->
+   <!-- begin Team section ----------- -->
   <section>
-
+    <h1>Our Team</h1>
     <div class="team container">
-          <h1>Team</h1>
       <div class="row">
-        <!--first row--------------->
+        <!-- first panel ------------ -->
         <div class="col-md-3">
-          <img src="james.jpg" height="170 px" width="150 px">
-          <h2>James</h2>
+          <img src="CEO" height="200" width="200">
+          <h2>Jennifer Lin</h2>
           <h3>CEO</h3>
-          <P></P>
         </div>
-        <!--second panel------------>
+        <!-- second panel ----------- -->
         <div class="col-md-3">
-          <img src="chris.jpeg" height="170px" width="150px">
-          <h2>Chris</h2>
+          <img src="CFO" height="200" width="200">
+          <h2>Olivia Coyle</h2>
           <h3>CFO</h3>
-          <P> </P>
         </div>
-        <!--third row------>
+        <!-- third panel ------------ -->
         <div class="col-md-3">
-          <img src="jane.jpeg" height="170" width="150">
-          <h2>Jane</h2>
-          <h3>COO</h3>
-          <P> </P>
-        </div>
-        <!--fourth row------->
-        <div class="col-md-3">
-          <img src="sophie.jpeg" height="170" width="150">
-          <h2>Sophie</h2>
+          <img src="CIO" height="200" width="200">
+          <h2>Peter Johnson</h2>
           <h3>CIO</h3>
-          <P></P>
+        </div>
+        <!-- fourth panel ----------- -->
+        <div class="col-md-3">
+          <img src="COO" height="200" width="200">
+          <h2>Alice Kane</h2>
+          <h3>COO</h3>
         </div>
       </div>
     </div>
-   
   </section>
-  <!--end team section------------------------------------ -->
-
-
-
-<!DOCTYPE html>
-<html>
-<section class="getinvolved">
-  <div class="container">
-    <h2>Get Involved</h2>
-    <div class="row">
-      <!--first panel-->
-      <div class="d-flex align-items-center">
-        <div class="options">
-          <div>
-            <i class="fas fa-calendar-check"></i>
-          </div>
-          <span><strong>Upcoming Events</strong></span>
-          <h2>March 15, 2019</h2>
-          <p>School Walkout for climate change!</p>
-          <h2>March 29, 2019</h2>
-          <p>Join us to celebrate the creation of this website!</p>
-          <h2>April 6, 2019</h2>
-          <p>Picnic at <strong><em>Turtle Pond</em></strong> in Central Park</p>
-          <h2></h2>
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <h2></h2>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <div class="options">
-          <span><strong>Donate</strong></span>
-          <div class="input-group-prepend">
-            <div>
-              <i class="fas fa-hand-holding-usd"></i>
-            </div>
-            <span class="input-group-text">$</span>
-            <input type="text" class="form-control" aria-label="Amount" placeholder="Amount">
-            <button class="btn btn-lg btn-info">Submit</button>
+  <!-- end Team section ------------- -->
+  
+<!-- begin Get Involved section --- -->
+  <section class="getinvolved">
+    <div class="container">
+      <h1>Get Involved</h1>
+      <div class="row">
+        <!-- first panel ------------ -->
+        <div class="col-md-4 col-lg-4">
+          <div class="options">
+            <br>
+            <br>
+            <i class="fas fa-money-check-alt"></i>
+            <br>
+            <br>
+            <h2>Donations</h2>
+            <p>Donate to help our cause!</p>
+            <button class="btn button">Donate</button>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <div class="options">
-          <div>
-            <i class="fas fa-user-plus"></i>
+        <!-- second panel ----------- -->
+        <div class="col-md-4 col-lg-4">
+          <div class="options">
+            <i class="fas fa-calendar-alt"></i>
+            <h2>Upcoming Events</h2>
+            <p>Join and support us at these events!</p>
+            <button class="btn button">Upcoming Events</button>
           </div>
-          <span><strong>Sign Up</strong></span>
-          <p>Sign up to recieve newsletter about upcoming events</p>
-          <div class="input-group">
-            <textarea class="form-control" placeholder="Your message here"></textarea>
-            <button class="btn btn-lg btn-info">Submit</button>
+        </div>
+        <!-- third panel ------------ -->
+        <div class="col-md-4 col-lg-4">
+          <div class="options">
+            <br>
+            <br>
+            <i class="fas fa-envelope"></i>
+            <h2>Send a message</h2>
+            <p>Message us for any business inquiries.</p>
+            <button class="btn button">Message us</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
+  <!-- end Get Involved section ----- -->
 
 <!--footnote------ -->
 <footer class="container-fluid">
@@ -302,5 +291,15 @@
           <p>Terms and Conditions</p>
         </div>
       </div>
+      <div>
+      </div>
     </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+      
 </html>
+
+<a href= donate.html class=<button class="btn button">Donate</button>"></a>

@@ -1,0 +1,41 @@
+<!-- end About Us Section--------------------------------- -->
+  <!--begin team section------------------------------------ -->
+  <section>
+
+    <div class="team container">
+          <h1>Team</h1>
+      <div class="row">
+        <!--first row--------------->
+        <div class="col-md-3">
+          <img src="lb2.jpg" height="170 px" width="100 px">
+          <h2>Lebron</h2>
+          <h3>CEO</h3>
+          <P>L FJLA JFK ALFKJAPTOI </P>
+        </div>
+        <!--second panel------------>
+        <div class="col-md-3">
+          <img src="cr2.jpeg" height="170px" width="300px">
+          <h2>Christiano</h2>
+          <h3>CFO</h3>
+          <P>L FJLA JFK ALFKJAPTOI </P>
+        </div>
+        <!--third row------>
+        <div class="col-md-3">
+          <img src="mi.jpeg">
+          <h2>Lionel</h2>
+          <h3>COO</h3>
+          <P>L FJLA JFK ALFKJAPTOI </P>
+        </div>
+        <!--fourth row------->
+        <div class="col-md-3">
+          <img src="am.jpeg">
+          <h2>Alex</h2>
+          <h3>CIO</h3>
+          <P>L FJLA JFK ALFKJAPTOI </P>
+        </div>
+      </div>
+    </div>
+   
+  </section>
+  <!--end team section------------------------------------ -->
+  
