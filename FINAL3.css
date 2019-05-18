@@ -1,0 +1,314 @@
+
+
+.nav-link{
+    font-weight: lighter;
+ 
+}
+.nav-link:hover{
+    font-weight:bolder;
+    background-color:#fcf597;
+}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 90vh;
+  width: 100%
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: lightgreen;
+}
+
+/* Sets the actual background image. */
+.bg1::after {
+	height:600px;
+	width:100%;
+	background-image: url('company logo');
+	background-size: cover;
+	text-align:center;
+}
+
+/* Sets the actual background image. */
+.bg2::after {
+  height:600px;
+  width:100%;
+  opacity: 0.8;
+  background-image: url('green.city.scape.7.png');
+  background-size: cover;
+  text-align:center;
+}
+
+/* Sets the actual background image. */
+.bg3::after {
+  height:100%;
+  width:100%;
+  opacity: 0.3;
+  background-image: url('green.city.scape.4.jpg');
+  /* background-size: cover; */
+  text-align:center;
+}
+
+header{
+    height:600px;
+    width:100%;
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+.services{
+    height:600px;
+    width:100%;
+    /* text-align:; */
+    font-size: 16px;
+    /* font-family: 'Playfair Display', serif; */
+    color: black;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 88px;
+	height: 125px;
+	will-change: background-position;
+	animation-name: fly-cycle;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+	--one {
+		animation-duration: 1s;
+		animation-delay: -0.5s;		
+	}
+	--two {
+		animation-duration: 0.9s;
+		animation-delay: -0.75s;
+	}
+	--three {
+		animation-duration: 1.25s;
+		animation-delay: -0.25s;
+	}
+	--four {
+		animation-duration: 1.1s;
+		animation-delay: -0.5s;
+	}
+}
+.bird-container {
+	position: absolute;
+	top: 20%;
+	left: -10%;
+	transform: scale(0) translateX(-10vw);
+	will-change: transform;
+	animation-name: fly-right-one;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	--one {
+		animation-duration: 15s;
+		animation-delay: 0;
+	}
+	--two {
+		animation-duration: 16s;
+		animation-delay: 1s;
+	}
+	--three {
+		animation-duration: 14.6s;
+		animation-delay: 9.5s;
+	}
+	--four {
+		animation-duration: 16s;
+		animation-delay: 10.25s;
+	}
+}
+@keyframes fly-cycle {
+	100% {
+		background-position: -900px 0;
+	}
+}
+@keyframes fly-right-one {
+	0% {
+		transform: scale(0.3) translateX(-10vw);
+	}
+	10% {
+		transform: translateY(2vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(0vh) translateX(30vw) scale(0.5);
+	}
+	30% {
+		transform: translateY(4vh) translateX(50vw) scale(0.6);
+	}
+	40% {
+		transform: translateY(2vh) translateX(70vw) scale(0.6);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.6);
+	}
+	60% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.6);
+	}
+}
+@keyframes fly-right-two {
+	0% {
+		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+	}
+	10% {
+		transform: translateY(0vh) translateX(10vw) scale(0.4);
+	}
+	20% {
+		transform: translateY(-4vh) translateX(30vw) scale(0.6);
+	}
+	30% {
+		transform: translateY(1vh) translateX(50vw) scale(0.45);
+	}
+	40% {
+		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+	}
+	50% {
+		transform: translateY(0vh) translateX(90vw) scale(0.45);
+	}
+	51% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+	100% {
+		transform: translateY(0vh) translateX(110vw) scale(0.45);
+	}
+}
+
+body{
+    background-color:lightgreen;
+    padding: 0px;
+    font-family: 'Playfair Display SC', serif;
+}
+.inspiration{
+    text-align: center;
+}
+  
+.getinvolved{
+    text-align: center;
+    padding: 50px 0px 80px;
+    margin-top: 50px;
+    width: 100%;
+}
+.getinvolved i{
+    color: #9F9292;
+    font-size:40px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+}
+.getinvolved .btn{
+    border-radius: 4px;
+    color: lightgreen;
+    width: 100%;
+    font-size: 15px;
+    background-color: #FFF;
+    color: black;
+    text-align: center;
+}
+.getinvolved .btn:hover{
+    color: #5dce3d;
+    text-align: center;
+}
+.getinvolved i{
+    font-size: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+.aboutus .btn{
+  background-color: white;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 100%;
+  text-align: center;
+
+}
+
+.teamcontainer-fluid{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.teamcontainer i{
+    text-align: center;
+}
+.team img{
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.options .btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footnote {
+	text-align: center;
+}
+
+.getinvolved{
+        /* background-color: white; */
+        padding: 50px 80px;
+
+        margin-top: 50px;
+    }
+
+.getinvolved button{
+        background-color: lightgreen;
+        border-color: lightgreen;
+        color: #fff;
+    }
+    
+.options{
+        background-color: lightgreen;
+        padding: 30px;
+        margin: 10px;
+        border: 1px;
+        border-radius: 50px;
+        margin-bottom: 50px;
+    }
