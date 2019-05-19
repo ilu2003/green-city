@@ -25,13 +25,13 @@
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 90vh;
-  width: 100%
+  height: 100vh;
+  width: 100%;
   /* For text formatting. */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: white; */
+  background: white;
 }
 
 .parallax::after {
@@ -54,10 +54,12 @@
 }
 
 /* The styling for the static div. */
+
 .static {
   background: lightgreen;
   height: 400px;
 }
+
 
 /* Sets the actual background image. */
 .bg1::after {
@@ -80,7 +82,7 @@
 
 /* Sets the actual background image. */
 .bg3::after {
-  height:100%;
+  height:90%;
   width:100%;
   opacity: 0.3;
   background-image: url('park.4.jpg');
@@ -109,8 +111,15 @@ header{
 
 body{
     background-color:lightgreen;
-    padding: 0px;
+    padding: 5px;
     font-family: 'Playfair Display SC', serif;
+}
+
+.with-margin {
+  margin-bottom: 5px;
+}
+.spacer5 {
+  height: 5px;
 }
 .inspiration{
     text-align: center;
@@ -148,6 +157,7 @@ body{
     height: 70px;
     text-align: center;
 }
+
 .aboutus .btn{
   background-color: white;
   border: none;
@@ -191,8 +201,8 @@ body{
     height: 70px;
     text-align: center;
 }
-
-
+.partnerscontainer{
+}
 
 .teamcontainer-fluid{
     width: 250px;
